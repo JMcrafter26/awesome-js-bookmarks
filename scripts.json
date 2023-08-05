@@ -1,10 +1,12 @@
 {
     "1": {
         "name": "Performance Monitor",
+        "description": "Shows performance statistics in the corner of the screen.",
         "script": "javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()"
     },
     "2": {
         "name": "In-Page Console",
+        "description": "Adds a console to the page. Click the console icon in the bottom right corner to open it.",
         "script": "javascript:(function () { var script = document.createElement('script'); script.src='https://cdn.jsdelivr.net/npm/eruda'; document.body.append(script); script.onload = function () { eruda.init(); } })();"
     }
 }
