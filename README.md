@@ -25,10 +25,7 @@ A collection of awesome JavaScript bookmarks, to make your life easier.
 
 A bookmarklet to monitor the performance of your website.
 
-
 <a target="_blank" href="javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()">Performance Monitor</a>
-
-[Performance Monitor](javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})())
 
 ```javascript
 javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()
@@ -40,9 +37,7 @@ Original Source: [Stats.js by Mr.doob](https://mrdoob.github.io/stats.js/)
 
 A bookmarklet to open a console in the current page. (Useful for mobile devices)
 
-
 <a target="_blank" href="javascript:(function () { var script = document.createElement('script'); script.src='https://cdn.jsdelivr.net/npm/eruda'; document.body.append(script); script.onload = function () { eruda.init(); } })();" >Console</a>
-
 
 ```javascript
 javascript:(function () { var script = document.createElement('script'); script.src='https://cdn.jsdelivr.net/npm/eruda'; document.body.append(script); script.onload = function () { eruda.init(); } })();"
