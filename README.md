@@ -7,6 +7,8 @@ A collection of awesome JavaScript bookmarks, to make your life easier.
 - [Awesome JS Bookmarks](#awesome-js-bookmarks)
   - [Table of Contents](#table-of-contents)
   - [JS Bookmarks](#js-bookmarks)
+    - [Performance Monitor](#performance-monitor)
+    - [In-Page Console](#in-page-console)
   - [How to Use](#how-to-use)
     - [Option 1: Dragging to your bookmarks bar](#option-1-dragging-to-your-bookmarks-bar)
     - [Option 2: Manually creating a bookmark](#option-2-manually-creating-a-bookmark)
@@ -18,6 +20,30 @@ A collection of awesome JavaScript bookmarks, to make your life easier.
       - [Edge](#edge)
 
 ## JS Bookmarks
+
+### Performance Monitor
+
+A bookmarklet to monitor the performance of your website.
+
+<a target="_blank" href="javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()">Performance Monitor</a>
+
+```javascript
+javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()
+```
+
+Original Source: [Stats.js by Mr.doob](https://mrdoob.github.io/stats.js/)
+
+### In-Page Console
+
+A bookmarklet to open a console in the current page. (Useful for mobile devices)
+
+<a target="_blank" href="javascript:(function () { var script = document.createElement('script'); script.src='https://cdn.jsdelivr.net/npm/eruda'; document.body.append(script); script.onload = function () { eruda.init(); } })();" >Console</a>
+
+```javascript
+javascript:(function () { var script = document.createElement('script'); script.src='https://cdn.jsdelivr.net/npm/eruda'; document.body.append(script); script.onload = function () { eruda.init(); } })();"
+```
+
+Original Source: [Eruda by liriliri](https://eruda.liriliri.io)
 
 ## How to Use
 
