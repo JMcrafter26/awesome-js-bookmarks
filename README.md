@@ -85,7 +85,9 @@ Choose your browser: [Chrome](####Chrome), [Firefox](####Firefox), [Safari](####
 
 #### Safari (iOS)
 
---Coming Soon--
+Beta shortcut: [Get shortcut](https://www.icloud.com/shortcuts/8ee4bc67c55b4f948dd1ec4061521742)
+
+
 #### Opera
 
 1. Copy the code from the JS Bookmark you want to add.
