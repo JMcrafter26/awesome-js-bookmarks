@@ -40,7 +40,7 @@ Adds a console to the page. Click the console icon in the bottom right corner to
 <a target="_blank" href="https://api.jm26.net/awesome-js-bookmarks/index.php?id=2">Add In-Page Console</a>
 
 ```javascript
-javascript:(function () { var script = document.createElement('script'); script.src='https://cdn.jsdelivr.net/npm/eruda'; document.body.append(script); script.onload = function () { eruda.init(); } })();"
+javascript:(function () { var script = document.createElement('script'); script.src='https://cdn.jsdelivr.net/npm/eruda'; document.body.append(script); script.onload = function () { eruda.init(); } })();
 ```
 
 Original Source: [Eruda by liriliri](https://eruda.liriliri.io)
