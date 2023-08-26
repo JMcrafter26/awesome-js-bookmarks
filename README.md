@@ -7,9 +7,12 @@ A collection of awesome JavaScript bookmarks, to make your life easier.
 - [Awesome JS Bookmarks](#awesome-js-bookmarks)
   - [Table of Contents](#table-of-contents)
   - [JS Bookmarks](#js-bookmarks)
+  - [Developer Tools](#developer-tools)
     - [Performance Monitor](#performance-monitor)
     - [In-Page Console](#in-page-console)
+  - [Tools](#tools)
     - [Auto Clicker](#auto-clicker)
+    - [Make it Awesome](#make-it-awesome)
   - [How to Use](#how-to-use)
     - [Option 1: Dragging to your bookmarks bar](#option-1-dragging-to-your-bookmarks-bar)
     - [Option 2: Manually creating a bookmark](#option-2-manually-creating-a-bookmark)
@@ -22,6 +25,7 @@ A collection of awesome JavaScript bookmarks, to make your life easier.
 
 ## JS Bookmarks
 
+## Developer Tools
 ### Performance Monitor
 
 Shows performance statistics in the corner of the screen.
@@ -46,6 +50,7 @@ javascript:(function () { var script = document.createElement('script'); script.
 
 Original Source: [Eruda by liriliri](https://eruda.liriliri.io)
 
+## Tools
 
 ### Auto Clicker
 
@@ -59,6 +64,18 @@ javascript:(function () {var DELAY=0;var PULSE=true;if(delay==null||delay==undef
 
 Original Source: [Auto Clicker by JMcrafter26](https://github.com/JMcrafter26/awesome-js-bookmarks#auto-clicker)
 
+### Make it Awesome
+
+Makes ugly websites awesome. Visited an ugly website and it's difficult to read the content? We have a super cool bookmarklet to help!
+
+<a target="_blank" href="https://api.jm26.net/awesome-js-bookmarks/index.php?id=4">Add Make it Awesome</a>
+
+```javascript
+javascript:(function(){const $$=selector=>document.querySelectorAll(selector);const createElement=(tagName,properties)=>Object.assign(document.createElement(tagName),properties);$$(`link[rel='stylesheet'],style`).forEach((el=>el.remove()));$$('*').forEach((el=>el.style=''));const linkElm=createElement('link',{rel:'stylesheet',href:'https://cdn.jsdelivr.net/npm/water.css@2/out/light.css'});const additionalStyling=document.createElement('link');additionalStyling.href=`https://water-somber-beef.glitch.me/bookmarklet/styling.css`;additionalStyling.rel='stylesheet';document.body.appendChild(additionalStyling);document.head.append(linkElm,!$$(`meta[name='viewport']`).length&&createElement('meta',{name:'viewport',content:'width=device-width,initial-scale=1.0'}));const moonSVG=`<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-moon'><path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'></path></svg>`;const sunSVG=`<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-sun'><circle cx='12' cy='12' r='5'></circle><line x1='12' y1='1' x2='12' y2='3'></line><line x1='12' y1='21' x2='12' y2='23'></line><line x1='4.22' y1='4.22' x2='5.64' y2='5.64'></line><line x1='18.36' y1='18.36' x2='19.78' y2='19.78'></line><line x1='1' y1='12' x2='3' y2='12'></line><line x1='21' y1='12' x2='23' y2='12'></line><line x1='4.22' y1='19.78' x2='5.64' y2='18.36'></line><line x1='18.36' y1='5.64' x2='19.78' y2='4.22'></line></svg>`;const toggleBtn=createElement('button',{innerHTML:sunSVG,ariaLabel:'Switch theme',style:`\n position: fixed;\n bottom: 20px;\n right: 20px;\n margin: 0;\n padding: 10px;\n line-height: 1;\n border-radius: 50%;\n background: white;\n color: black;\n -webkit-box-shadow: 0px 0px 66px 4px rgba(0,0,0,0.26);\n-moz-box-shadow: 0px 0px 66px 4px rgba(0,0,0,0.26);\nbox-shadow: 0px 0px 66px 4px rgba(0,0,0,0.26);\n `});let theme='light';const toggleTheme=()=>{if(theme==='light'){theme='dark';toggleBtn.innerHTML=moonSVG;linkElm.href='https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css'}else{theme='light';linkElm.href='https://cdn.jsdelivr.net/npm/water.css@2/out/light.css';toggleBtn.innerHTML=sunSVG}};var selectors=['#sidebar-wrap','#advert','#xrail','#middle-article-advert-container','#sponsored-recommendations','#around-the-web','#sponsored-recommendations','#taboola-content','#taboola-below-taboola-native-thumbnails','#inarticle_wrapper_div','#rc-row-container','#ads','#at-share-dock','#at4-share','#at4-follow','#right-ads-rail','div#ad-interstitial','div#advert-article','div#ac-lre-player-ph','.ad','.ads','.adZone','.cookieBanner','.cookies','.avert','.avert__wrapper','.middle-banner-ad','.advertisement','.GoogleActiveViewClass','.advert','.cns-ads-stage','.teads-inread','.ad-banner','.ad-anchored','.js_shelf_ads','.ad-slot','.antenna','.xrail-content','.advertisement__leaderboard','.ad-leaderboard','.trc_rbox_outer','.ks-recommended','.article-da','div.sponsored-stories-component','div.addthis-smartlayers','div.article-adsponsor','div.signin-prompt','div.article-bumper','div.video-placeholder','div.top-ad-container','div.header-ad','div.ad-unit','div.demo-block','div.OUTBRAIN','div.ob-widget','div.nwsrm-wrapper','div.announcementBar','div.partner-resources-block','div.arrow-down','div.m-ad','div.story-interrupt','div.taboola-recommended','div.ad-cluster-container','div.ctx-sidebar','div.incognito-modal','.OUTBRAIN','.subscribe-button','.subscribe','.ads9','.leaderboards','.GoogleActiveViewElement','.mpu-container','.ad-300x600','.tf-ad-block','.sidebar-ads-holder-top','.ads-one','.FullPageModal__scroller','.content-ads-holder','.widget-area','.social-buttons','.ac-player-ph','aside#sponsored-recommendations',`aside[role='banner']`,'aside','amp-ad',`[id*='ads']`,`[class*='ads']`,'span[id^=ad_is_]',`div[class*='indianapolis-optin']`,'div[id^=google_ads_iframe]','div[data-google-query-id]','section[data-response]','ins.adsbygoogle','div[data-google-query-id]',`div[data-test-id='fullPageSignupModal']`,`div[data-test-id='giftWrap']`,'marquee','nav','blink','iframe'];const observer=new MutationObserver((mutations=>{for(let i in selectors){let nodesList=$$(selectors[i]);for(let i=0;i<nodesList.length;i++){let el=nodesList[i];if(el&&el.parentNode)el.parentNode.removeChild(el)}}}));observer.observe(document.body,{subtree:true,childList:true});toggleBtn.addEventListener('click',toggleTheme);document.body.append(toggleBtn)})();
+```
+
+Original Source: [Make it Awesome by Tiago Rangel](https://mta-bookmarklet.glitch.me)
+
 ## How to Use
 
 ### Option 1: Dragging to your bookmarks bar
@@ -71,7 +88,7 @@ Original Source: [Auto Clicker by JMcrafter26](https://github.com/JMcrafter26/aw
 
 ### Option 2: Manually creating a bookmark
 
-Choose your browser: [Chrome](####Chrome), [Firefox](####Firefox), [Safari](####Safari), [Opera](####Opera), [Edge](####Edge)
+Choose your browser: [Chrome](#Chrome), [Firefox](#Firefox), [Safari](#Safari), [Opera](####Opera), [Edge](####Edge)
 
 #### Chrome
 
